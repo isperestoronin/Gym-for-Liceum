@@ -37,7 +37,7 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 100%;
+  max-width: 100%;
   transition: 0.2s;
   
 }
@@ -45,6 +45,7 @@ button {
   .container {
     width: 1040px;
     margin: 0 auto;
+    
   }
 }
 .header {
@@ -667,10 +668,12 @@ div#ant-section__breadcrumbs:after {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
+  margin: 0;
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
+  float: left;
 }
 
 .footer-distributed .footer-left p {
@@ -872,8 +875,8 @@ div#ant-section__breadcrumbs:after {
 .card__date {
   display: block;
   font-family: "Inter", sans-serif;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
  
   color: var(--color-text);
   margin-bottom: 6px;
@@ -910,3 +913,126 @@ div#ant-section__breadcrumbs:after {
   --color-highlight-secondary: #869ab8;
   --border-radius-primary: 32px; 
 }
+.zachem33{
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
+  padding: 16px;
+  margin-bottom: 20px;
+  
+}
+
+
+.zachem332211{
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to left, #f13e07, #335eea);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+
+
+
+
+
+
+
+.containerz {
+  width: 100%;
+  transition: 0.2s;
+
+}
+
+
+
+
+
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 1600px;
+  padding: 45px 45px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+  
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 5px #335eea;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.control-icon {
+  fill: #335eea;
+  transition: .3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+
+
+
+
+
+
+
